@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+app:
+  jwt:
+    secret: CivicFixTestSecretKeyForUnitAndIntegrationTests2026String32Chars
+    expiration-ms: 3600000
+  upload:
+    dir: ./target/test-uploads
+  priority:
+    age-weight-per-day: 2.0
+    max-age-weight: 30.0
+  duplicate:
+    window-days: 30
+    threshold-percentage: 45.0
