@@ -61,3 +61,15 @@ Desktop.ini
 # Logs
 *.log
 logs/
+
+# Additional build output
+backend/build/
+frontend/build/
+coverage/
+
+# Environment secrets
+!.env.example
+
+# Uploaded files - keep only placeholder
+uploads/*
+!uploads/.gitkeep
