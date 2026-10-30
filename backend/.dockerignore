@@ -1,0 +1,9 @@
+node_modules/
+tests/
+*.log
+.env
+.env.*
+.git/
+.gitignore
+uploads/complaints/*
+!uploads/complaints/.gitkeep

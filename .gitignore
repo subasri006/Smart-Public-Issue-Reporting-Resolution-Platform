@@ -1,6 +1,7 @@
 # CivicFix .gitignore
 
 # Java / Maven build output
+backend-java-backup/
 backend/target/
 target/
 *.class
